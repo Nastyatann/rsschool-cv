@@ -4,13 +4,16 @@
     line-height: 150%;
 }
 
+body {
+    background-color: aliceblue;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
     max-width: 800px;
-    height: 100vh;
     margin: 0 auto;
-    background-color: #bbc1c436;
+    background-color: #dce3e7;
 }
 
 .header-foto {
@@ -19,12 +22,13 @@
 }
 
 .header-foto img {
-    padding: 20px 0;
+    padding: 10px 0;
     border-radius: 50%;
 }
 
 header {
-    margin: 40px 0 25px;
+    display: flex;
+    align-items: center;
 }
 
 h1 {
@@ -55,19 +59,14 @@ main {
 
 .first {
     width: 40%;
-    background-color: #bbc1c480;
 }
 
 .column {
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 section {
     margin-bottom: 25px;
-}
-
-#contact {
-    margin-top: 15px;
 }
 
 #language,
@@ -79,6 +78,7 @@ footer {
     display: flex;
     flex: 0 0 auto;
     align-items: center;
+    justify-content: center;
     padding-top: 10px;
 }
 
