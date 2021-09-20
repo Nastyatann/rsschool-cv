@@ -13,12 +13,9 @@
 <body>
     <div class="wrapper">
         <nav>
-            <input type="checkbox" id="check-menu">
-            <label class="menu-label" for="check-menu"></label>
-            <div class="burger first-line"></div>
-            <div class="burger second-line"></div>
-            <div class="burger third-line"></div>
-            <div class="burger fourth-line"></div>                        
+            <div class="burger">
+                <span></span>
+            </div>                  
             <ul class="center nav">
               <li class="nav__item">
                 <a href="#contact" title="">contact</a>
@@ -26,6 +23,12 @@
               <li class="nav__item">
                 <a href="#skills" title="">skills</a>
               </li>
+              <li class="nav__item">
+                <a href="#experience" title="">experience</a>
+              </li>  
+              <li class="nav__item">
+                <a href="#education" title="">education</a>
+              </li>    
               <li class="nav__item">
                 <a href="#language" title="">language</a>
               </li>
@@ -37,12 +40,6 @@
               </li>
               <li class="nav__item">
                 <a href="#code" title="">code style</a>
-              </li>    
-              <li class="nav__item">
-                <a href="#experience" title="">experience</a>
-              </li>  
-              <li class="nav__item">
-                <a href="#education" title="">education</a>
               </li>              
             </ul>
         </nav>
@@ -52,7 +49,7 @@
                     <img src="./images/cv-AK.jpg" alt="my foto">
                 </figure>
             </div>
-            <div class="second">
+            <div class="second column">
                 <h1>Anastasiya Kuzniatsova</h1>
                 <h2>Junior Front-end Developer</h2>
             </div>
@@ -80,6 +77,22 @@
                         <li class="skills-item">Figma, Adobe Photoshop</li>
                     </ul>
                 </section>
+                <section id="experience">
+                    <h3>Experience:</h3>
+                    <h4>RS School(FE)</h4>
+                    <p>(jul 2021 - in progress)</p>
+                    <h4>IT-Academy course "HTML, CSS, Javascript"</h4>
+                    <p>(may 2020 - aug 2020)</p>
+                </section>
+                <section id="education">
+                    <h3>Education:</h3>
+                    <h4>Vitebsk State University</h4>
+                    <div>
+                        <p>Faculty of Mathematics</p>
+                        <p>Specialty: Mathematic and Informatic</p>
+                        <p>(2001-2006)</p>     
+                    </div>
+                </section>
                 <section id="language">
                     <h3>Language:</h3>
                     English pre-intermediate (A2)
@@ -93,14 +106,38 @@
                 </section>
                 <section id="examples">
                     <h3>Examples:</h3>
-                    <p>German Invest Group</p>
-                    <a href="https://github.com/Nastyatann/reposit/blob/German-invest-group/src/index.html">
-                        <div></div>
-                    </a>
-                    <p>Bread</p>
-                    <a href="https://github.com/Nastyatann/reposit/tree/bread/src">
-                        <div></div>
-                    </a>
+                    <div class="examples-item">
+                        <div class="example-text">
+                            <p>"WHACK-A-MOLE"</p>
+                            <p>A funny game with 3 levels</p>
+                            <p>HTML, CSS, JS</p>
+                        </div>
+                        <a href="https://github.com/Nastyatann/reposit/tree/bread/src" target="_blank">
+                            <div class="example game">
+
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="examples-item">
+                        <div class="example-text">
+                            <p>"GERMAN INVEST GROUP"</p>
+                            <p>A landing page for a building company</p>
+                            <p>HTML, CSS, JS</p>
+                        </div>
+                        <a href="https://github.com/Nastyatann/reposit/blob/German-invest-group/src/index.html" target="_blank">
+                            <div class="example german"></div>
+                        </a>
+                    </div>
+                    <div class="examples-item">
+                        <div class="example-text">
+                            <p>"PASTRY"</p>
+                            <p>A landing page for a pastry store</p>
+                            <p>HTML, CSS</p>
+                        </div>
+                        <a href="https://github.com/Nastyatann/reposit/tree/bread/src" target="_blank">
+                            <div class="example bread"></div>
+                        </a>
+                    </div>   
                 </section>
                 <section id="code">
                     <h3>Code example</h3>
@@ -112,7 +149,7 @@ function decode(expr) {
     let str = '';
     let n = expr.length;
                             
-    for (let i = 0; i < n; i++) {
+    for (let i = 0; i &lt; n; i++) {
         if (expr[i] === '*') {
             letters.push(' ');
             i += 10;
@@ -130,7 +167,7 @@ function decode(expr) {
             }
         }
     }
-    for (let j = 0; j < letters.length; j++) {
+    for (let j = 0; j &lt; letters.length; j++) {
         if (letters[j] != ' ') {
             lettersDecode[j] = MORSE_TABLE[letters[j]];
         } else {
@@ -142,33 +179,18 @@ function decode(expr) {
                         </code>
                     </pre>
                 </section>
-                <section id="experience">
-                    <h3>Experience:</h3>
-                    <h4>RS School(FE)</h4>
-                    <p>(jul 2021 - in progress)</p>
-                    <h4>IT-Academy course "HTML, CSS, Javascript"</h4>
-                    <p>(may 2020 - aug 2020)</p>
-                </section>
-                <section id="education">
-                    <h3>Education:</h3>
-                    <h4>Vitebsk State University</h4>
-                    <div>
-                        <p>Faculty of Mathematics</p>
-                        <p>Specialty: Mathematic and Informatic</p>
-                        <p>(2001-2006)</p>     
-                    </div>
-                </section>
             </div>
         </main>
         <footer>
-            <div>
-                <p><a href="https://github.com/Nastyatann" title="Nastyatann">GitHub</a></p>
+            <a href="https://github.com/Nastyatann" target="_blank" title="Nastyatann"><img class="img-logo" src="./icons/github-s.svg" alt="github-logo"></a>
+            <p>
                 2021
-            </div>
+            </p>
             <div class="rss-icon">
-                <a href="https://rs.school/js/"><img src="./icons/rs_school_js.svg" alt="logo"></a>
+                <a href="https://rs.school/js/" target="_blank"><img src="./icons/rs_school_js.svg" class="img-logo" alt="logo"></a>
             </div>
         </footer>
-    </div>     
+    </div> 
+    <script src="main.js"></script>    
 </body>
 </html>
