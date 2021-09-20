@@ -6,56 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>CV-Nastyatann</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/shades-of-purple.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
     <div class="wrapper">
-        <main>
+        <nav>
+            <div class="burger">
+                <span></span>
+            </div>                  
+            <ul class="center nav">
+              <li class="nav__item">
+                <a href="#contact" title="">contact</a>
+              </li>
+              <li class="nav__item">
+                <a href="#skills" title="">skills</a>
+              </li>
+              <li class="nav__item">
+                <a href="#experience" title="">experience</a>
+              </li>  
+              <li class="nav__item">
+                <a href="#education" title="">education</a>
+              </li>    
+              <li class="nav__item">
+                <a href="#language" title="">language</a>
+              </li>
+              <li class="nav__item">
+                <a href="#profile" title="">profile</a>
+              </li>
+              <li class="nav__item">
+                <a href="#examples" title="">examples</a>
+              </li>
+              <li class="nav__item">
+                <a href="#code" title="">code style</a>
+              </li>              
+            </ul>
+        </nav>
+        <header class="header">
             <div class="first column">
                 <figure class="header-foto">
                     <img src="./images/cv-AK.jpg" alt="my foto">
                 </figure>
+            </div>
+            <div class="second column">
+                <h1>Anastasiya Kuzniatsova</h1>
+                <h2>Junior Front-end Developer</h2>
+            </div>
+        </header>
+        <main>
+            <div class="first column">
                 <section id="contact">
                     <h3>Contact details:</h3>
                     <ul>
-                        <li><span>Address: </span>25 Chkalova street, Vitebsk 210032</li>
-                        <li><span>Telephone: </span>+375295150834</li>
-                        <li><span>Email: </span>anastasia.kuz.84@gmail.com</li>
-                        <li><span>GitHub: </span>https://github.com/nastyatann</li>
+                        <li class="contact-item"><span>Address: </span>25 Chkalova street, Vitebsk 210032</li>
+                        <li class="contact-item"><span>Telephone: </span>+375295150834</li>
+                        <li class="contact-item"><span>Email: </span>anastasia.kuz.84@gmail.com</li>
+                        <li class="contact-item"><span>GitHub: </span>https://github.com/nastyatann</li>
                     </ul>
                 </section>
                 <section id="skills">
                     <h3>Skills:</h3>
                     <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                        <li>Responsive Design</li>
-                        <li>Git, GitHub</li>
-                        <li>Visual Studio Code</li>
-                        <li>Figma, Adobe Photoshop</li>
+                        <li class="skills-item">HTML5</li>
+                        <li class="skills-item">CSS3</li>
+                        <li class="skills-item">JavaScript</li>
+                        <li class="skills-item">Responsive Design</li>
+                        <li class="skills-item">Git, GitHub</li>
+                        <li class="skills-item">Visual Studio Code</li>
+                        <li class="skills-item">Figma, Adobe Photoshop</li>
                     </ul>
-                </section>
-                <section id="language">
-                    <h3>Language:</h3>
-                    English pre-intermediate (A2)
-                </section>                
-            </div>            
-            <div class="second column">
-                <header>
-                    <h1>Anastasiya Kuzniatsova</h1>
-                    <h3>Junior Front-end Developer</h3>
-                </header>
-                <section id="profile">
-                    <h3>Profile</h3>
-                    <p>I am an opened minded person and always eager to learn.</p>
-                    <p>My goal is to be a proficient at front-end developer and change my career.</p>
-                </section>
-                <section id="examples">
-                    <h3>Examples:</h3>
-                    <p>German Invest Group</p>
-                    <a href="https://github.com/Nastyatann/reposit/blob/German-invest-group/src/index.html">code</a>
-                    <p>Bread</p>
-                    <a href="https://github.com/Nastyatann/reposit/tree/bread/src">code</a>
                 </section>
                 <section id="experience">
                     <h3>Experience:</h3>
@@ -73,17 +93,104 @@
                         <p>(2001-2006)</p>     
                     </div>
                 </section>
+                <section id="language">
+                    <h3>Language:</h3>
+                    English pre-intermediate (A2)
+                </section>                
+            </div>            
+            <div class="second column">
+                <section id="profile">
+                    <h3>Profile</h3>
+                    <p>I am an opened minded person and always eager to learn.</p>
+                    <p>My goal is to be a proficient at front-end developer and change my career.</p>
+                </section>
+                <section id="examples">
+                    <h3>Examples:</h3>
+                    <div class="examples-item">
+                        <div class="example-text">
+                            <p>"WHACK-A-MOLE"</p>
+                            <p>A game with 3 levels, with save results and level in local Storage</p>
+                            <p>HTML, CSS, JS</p>
+                        </div>
+                        <a href="https://github.com/Nastyatann/reposit/tree/bread/src" target="_blank">
+                            <div class="example game">
+
+                            </div>
+                        </a>
+                    </div> 
+                    <div class="examples-item">
+                        <div class="example-text">
+                            <p>"GERMAN INVEST GROUP"</p>
+                            <p>A landing page for a building company</p>
+                            <p>HTML, CSS, JS</p>
+                        </div>
+                        <a href="https://github.com/Nastyatann/reposit/blob/German-invest-group/src/index.html" target="_blank">
+                            <div class="example german"></div>
+                        </a>
+                    </div>
+                    <div class="examples-item">
+                        <div class="example-text">
+                            <p>"PASTRY"</p>
+                            <p>A landing page for a pastry store</p>
+                            <p>HTML, CSS</p>
+                        </div>
+                        <a href="https://github.com/Nastyatann/reposit/tree/bread/src" target="_blank">
+                            <div class="example bread"></div>
+                        </a>
+                    </div>   
+                </section>
+                <section id="code">
+                    <h3>Code example</h3>
+                    <pre>
+                        <code>
+function decode(expr) {
+    let letters = [];
+    let lettersDecode = [];
+    let str = '';
+    let n = expr.length;
+                            
+    for (let i = 0; i &lt; n; i++) {
+        if (expr[i] === '*') {
+            letters.push(' ');
+            i += 10;
+        }
+        if (expr[i] === '1') {
+            if (expr[i + 1] === '0') {
+                str += '.';
+            } else {
+                str += '-';
+            }
+            i++;
+            if ((i + 1) % 10 === 0) {
+                letters.push(str);
+                str = '';
+            }
+        }
+    }
+    for (let j = 0; j &lt; letters.length; j++) {
+        if (letters[j] != ' ') {
+            lettersDecode[j] = MORSE_TABLE[letters[j]];
+        } else {
+            lettersDecode.push(' ');
+        }
+    }
+    return  lettersDecode.join('');
+}
+                        </code>
+                    </pre>
+                </section>
             </div>
         </main>
         <footer>
-            <div>
-                <p><a href="https://github.com/Nastyatann">GitHub</a></p>
+            <a href="https://github.com/Nastyatann" target="_blank" title="Nastyatann"><img class="img-logo" src="./icons/github-s.svg" alt="github-logo"></a>
+            <p>
                 2021
-            </div>
+            </p>
             <div class="rss-icon">
-                <a href="https://rs.school/js/"><img src="./icons/rs_school_js.svg" alt="logo"></a>
+                <a href="https://rs.school/js/" target="_blank"><img src="./icons/rs_school_js.svg" class="img-logo" alt="logo"></a>
             </div>
         </footer>
-    </div>     
+    </div> 
+    <script src="main.js"></script>    
 </body>
 </html>
